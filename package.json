@@ -1,0 +1,22 @@
+{
+  "name": "hutompecha",
+  "version": "1.0.0",
+  "description": "ecommerce platform",
+  "author": "SwadhIn",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0",
+    "bootstrap-vue": "^1.0.2",
+    "bootstrap": "^4.0.0-beta.2",
+    "vuejs-countdown": "^0.2.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1"
+  }
+}
