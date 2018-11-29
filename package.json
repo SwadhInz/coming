@@ -17,6 +17,10 @@
     "vuejs-countdown": "^0.2.1"
   },
   "devDependencies": {
-    "cross-env": "^5.0.1"
+    "cross-env": "^5.0.1",
+    "node-sass": "^4.9.2",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^7.0.3",
+    "vue-lazyload": "^1.2.6"
   }
 }

@@ -1,14 +1,12 @@
 <template>
 <div class="construction-wrapper">
     <div class="container">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col">
                 <div class="constructions d-flex justify-content-center align-items-center flex-column">
-                    <h1 class="constructions__title title title--style">
-                        Page Is Under <strong>construction</strong> 
-                    </h1>
+                    <img src="/hps-white.svg" alt="" style="max-width: 370px">
                     <p class="constructions__text">We are working on something big. <br>We will be back soon. </p>
-                    <Countdown class="mt-4" deadline="November 19, 2018"></Countdown>
+                    <countdown class="mt-4" deadline="December 19, 2018"></countdown>
                 </div>
             </div>
         </div>
@@ -17,25 +15,26 @@
 </template>
 
 <script>
-import Countdown from 'vuejs-countdown'
+import countdown from 'vuejs-countdown'
 export default {
     components: { 
-        Countdown 
+        countdown 
     }
 }
 </script>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .construction-wrapper {
-    background: linear-gradient(290deg, rgba(255,204,33,1) 0%, rgba(255,204,33,1) 30%, rgba(74,196,246,1) 80%, rgba(74,196,246,1) 100%);
+    background: linear-gradient(290deg, rgb(117, 15, 109) 0%, rgb(153, 18, 142) 30%, rgba(74,196,246,1) 80%, rgba(74,196,246,1) 100%);
+
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 .constructions {
-    min-height: 70vh;
+    min-height: 100vh;
     overflow: hidden;
     &__title {
         text-align: center; 
@@ -62,6 +61,6 @@ export default {
 }
 
 .digit, .text {
-    color: rgba(0, 0, 0, 0.78);
+    color: #fff;
 }
 </style>
